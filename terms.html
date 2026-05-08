@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms and Conditions — Calm Tech Notebook</title>
+<meta name="description" content="Terms and conditions governing the use of Calm Tech Notebook's website and services.">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calmtechnotebook.ca/terms">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%23000000'/><circle cx='50' cy='50' r='32' fill='none' stroke='%23ffffff' stroke-width='3'/><circle cx='50' cy='50' r='8' fill='%23ffffff'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --black: #000000;
+    --near-black: #0a0a0a;
+    --card: #111111;
+    --border: #1e1e1e;
+    --white: #ffffff;
+    --grey-1: #888888;
+    --grey-2: #555555;
+    --grey-3: #333333;
+    --accent: #c8c8c8;
+    --red: #cc3333;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  /* ─── LANGUAGE TOGGLE ─── */
+  html[data-lang="en"] .fr { display: none; }
+  html[data-lang="fr"] .en { display: none; }
+
+  .lang-toggle {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+    display: flex;
+    gap: 4px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    padding: 4px;
+  }
+  .lang-toggle button {
+    background: transparent;
+    border: none;
+    color: var(--grey-1);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .lang-toggle button:hover { color: var(--white); }
+  .lang-toggle button.active {
+    background: var(--white);
+    color: var(--black);
+  }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    line-height: 1.7;
+  }
+
+  a { color: inherit; }
+  a.link {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--grey-3);
+    transition: border-color 0.2s ease;
+  }
+  a.link:hover { border-color: var(--white); }
+
+  /* ─── TOP NAV ─── */
+  .top-nav {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 100;
+  }
+  .top-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--grey-1);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    transition: color 0.2s ease;
+  }
+  .top-nav a:hover { color: var(--white); }
+  .top-nav svg {
+    width: 12px;
+    height: 12px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  /* ─── HEADER ─── */
+  .doc-header {
+    padding: 140px 24px 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--grey-1);
+    margin-bottom: 20px;
+  }
+  .doc-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  .doc-meta {
+    font-size: 13px;
+    color: var(--grey-2);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── BODY ─── */
+  .doc-body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 100px;
+  }
+
+  .summary-card {
+    background: var(--near-black);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 36px;
+    margin-bottom: 64px;
+  }
+  .summary-card h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .summary-card p {
+    font-size: 15px;
+    color: var(--grey-1);
+    line-height: 1.75;
+    margin-bottom: 12px;
+  }
+  .summary-card p:last-child { margin-bottom: 0; }
+  .summary-card strong {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .doc-body section {
+    margin-bottom: 56px;
+  }
+  .doc-body section:last-child {
+    margin-bottom: 0;
+  }
+
+  .doc-body h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(22px, 3.5vw, 28px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-body h2 .section-num {
+    font-size: 0.6em;
+    color: var(--grey-2);
+    margin-right: 12px;
+    font-style: italic;
+  }
+
+  .doc-body h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
+  }
+
+  .doc-body p {
+    font-size: 15px;
+    color: var(--grey-1);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .doc-body p:last-child { margin-bottom: 0; }
+
+  .doc-body ul, .doc-body ol {
+    margin: 0 0 20px 24px;
+    padding: 0;
+    color: var(--grey-1);
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  .doc-body li {
+    margin-bottom: 10px;
+  }
+  .doc-body li::marker {
+    color: var(--grey-2);
+  }
+
+  .doc-body strong {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .doc-body em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  /* For emphasis on critical legal statements */
+  .legal-emphasis {
+    background: var(--near-black);
+    border-left: 2px solid var(--red);
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .legal-emphasis p {
+    font-size: 14px;
+    color: var(--grey-1);
+    margin-bottom: 10px;
+  }
+  .legal-emphasis p:last-child { margin-bottom: 0; }
+  .legal-emphasis strong { color: var(--white); }
+
+  .info-box {
+    background: var(--near-black);
+    border-left: 2px solid var(--grey-3);
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .info-box p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .info-box p:last-child { margin-bottom: 0; }
+
+  .contact-block {
+    background: var(--near-black);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 24px;
+  }
+  .contact-block p {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .contact-block .label {
+    color: var(--grey-2);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .contact-block .value {
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .contact-block .value:last-child { margin-bottom: 0; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    color: var(--grey-1);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .footer-links a:hover { color: var(--white); }
+  .footer-copy {
+    color: var(--grey-2);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 600px) {
+    .top-nav { top: 16px; left: 16px; }
+    .lang-toggle { top: 16px; right: 16px; }
+    .doc-header { padding: 120px 20px 50px; }
+    .doc-body { padding: 60px 20px 80px; }
+    .summary-card { padding: 24px; }
+    .contact-block { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── TOP NAV ─── -->
+<div class="top-nav">
+  <a href="https://calmtechnotebook.ca">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    <span class="en">HOME</span><span class="fr">ACCUEIL</span>
+  </a>
+</div>
+
+<!-- ─── LANGUAGE TOGGLE ─── -->
+<div class="lang-toggle" role="group" aria-label="Language">
+  <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+  <button id="btn-fr" onclick="setLang('fr')">FR</button>
+</div>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="doc-header">
+  <p class="doc-eyebrow">
+    <span class="en">Legal</span>
+    <span class="fr">Légal</span>
+  </p>
+  <h1 class="doc-title">
+    <span class="en">Terms and Conditions</span>
+    <span class="fr">Conditions d'utilisation</span>
+  </h1>
+  <p class="doc-meta">
+    <span class="en">Effective May 8, 2026 &middot; Last updated May 8, 2026</span>
+    <span class="fr">En vigueur le 8 mai 2026 &middot; Dernière mise à jour le 8 mai 2026</span>
+  </p>
+</header>
+
+<!-- ══════════════ BODY ══════════════ -->
+<main class="doc-body">
+
+  <!-- SUMMARY -->
+  <div class="summary-card">
+    <h2>
+      <span class="en">In short</span>
+      <span class="fr">En bref</span>
+    </h2>
+    <div class="en">
+      <p>These terms govern your use of <strong>calmtechnotebook.ca</strong> and any direct relationship with Calm Tech Notebook at the studio level. Each of our applications has its own end-user license agreement that prevails over these terms for matters specific to that application.</p>
+      <p>By using the website or contacting us, you accept these terms. If you do not agree, please do not use the website or our services.</p>
+    </div>
+    <div class="fr">
+      <p>Ces conditions régissent votre utilisation de <strong>calmtechnotebook.ca</strong> et toute relation directe avec Calm Tech Notebook au niveau du studio. Chacune de nos applications possède sa propre entente de licence utilisateur final qui prévaut sur ces conditions pour les questions propres à cette application.</p>
+      <p>En utilisant le site web ou en nous contactant, vous acceptez ces conditions. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site web ni nos services.</p>
+    </div>
+  </div>
+
+  <!-- 1. ACCEPTANCE -->
+  <section>
+    <h2><span class="section-num">01</span><span class="en">Acceptance of these terms</span><span class="fr">Acceptation de ces conditions</span></h2>
+    <div class="en">
+      <p>By accessing or using the website calmtechnotebook.ca, by communicating with the studio, or by using any service provided directly by the studio, you agree to be bound by these terms and conditions. If you are using the services on behalf of an organization, you represent that you have the authority to bind that organization.</p>
+    </div>
+    <div class="fr">
+      <p>En accédant ou en utilisant le site calmtechnotebook.ca, en communiquant avec le studio ou en utilisant tout service fourni directement par le studio, vous acceptez d'être lié par ces conditions d'utilisation. Si vous utilisez les services au nom d'une organisation, vous déclarez avoir l'autorité de lier cette organisation.</p>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT US -->
+  <section>
+    <h2><span class="section-num">02</span><span class="en">About Calm Tech Notebook</span><span class="fr">À propos de Calm Tech Notebook</span></h2>
+    <div class="en">
+      <p>Calm Tech Notebook (the <em>studio</em>) is an independent software studio operated as a sole proprietorship registered in Quebec, Canada. The studio designs and publishes mobile applications grounded in calm technology principles: local-first storage, zero third-party tracking, no advertising, and intentional design.</p>
+      <p>Throughout these terms, <em>we</em>, <em>us</em>, and <em>our</em> refer to Calm Tech Notebook. <em>You</em> and <em>your</em> refer to the user of the website or services.</p>
+    </div>
+    <div class="fr">
+      <p>Calm Tech Notebook (le <em>studio</em>) est un studio logiciel indépendant exploité comme une entreprise individuelle enregistrée au Québec, Canada. Le studio conçoit et publie des applications mobiles guidées par les principes de la technologie calme : stockage local-first, aucun pistage tiers, aucune publicité, et design intentionnel.</p>
+      <p>Dans ces conditions, <em>nous</em> et <em>notre</em> désignent Calm Tech Notebook. <em>Vous</em> et <em>votre</em> désignent l'utilisateur du site web ou des services.</p>
+    </div>
+  </section>
+
+  <!-- 3. SCOPE -->
+  <section>
+    <h2><span class="section-num">03</span><span class="en">Scope and relationship to app-specific terms</span><span class="fr">Portée et relation avec les conditions propres aux applications</span></h2>
+    <div class="en">
+      <p>These terms apply to:</p>
+      <ul>
+        <li>Your use of the website calmtechnotebook.ca and any subdomain operated directly by the studio.</li>
+        <li>Your direct communications with the studio (email, support inquiries).</li>
+        <li>The general relationship between you and the studio.</li>
+      </ul>
+      <p>Each application published by the studio (such as CalmFeed and CalmShot) has its own end-user license agreement (EULA) and privacy policy, which apply to the use of that specific application. To the extent of any conflict between these studio-level terms and an application-specific EULA, the application-specific EULA prevails for matters within its scope.</p>
+      <p>The distribution of our applications through the Apple App Store and Google Play is also governed by the standard terms of those platforms, which form a separate contract between you and the platform operator.</p>
+    </div>
+    <div class="fr">
+      <p>Ces conditions s'appliquent à :</p>
+      <ul>
+        <li>Votre utilisation du site calmtechnotebook.ca et de tout sous-domaine exploité directement par le studio.</li>
+        <li>Vos communications directes avec le studio (courriel, demandes de soutien).</li>
+        <li>La relation générale entre vous et le studio.</li>
+      </ul>
+      <p>Chaque application publiée par le studio (telle que CalmFeed et CalmShot) possède sa propre entente de licence utilisateur final (CLUF) et sa propre politique de confidentialité, qui s'appliquent à l'utilisation de cette application précise. En cas de conflit entre ces conditions au niveau du studio et une CLUF propre à une application, la CLUF de l'application prévaut pour les questions relevant de sa portée.</p>
+      <p>La distribution de nos applications via l'Apple App Store et Google Play est également régie par les conditions standards de ces plateformes, qui forment un contrat distinct entre vous et l'exploitant de la plateforme.</p>
+    </div>
+  </section>
+
+  <!-- 4. ELIGIBILITY -->
+  <section>
+    <h2><span class="section-num">04</span><span class="en">Eligibility</span><span class="fr">Admissibilité</span></h2>
+    <div class="en">
+      <p>The website and services are intended for users who have reached the age of majority in their place of residence. By using the services, you represent that you have the legal capacity to enter into a binding agreement.</p>
+    </div>
+    <div class="fr">
+      <p>Le site web et les services sont destinés aux utilisateurs ayant atteint l'âge de la majorité dans leur lieu de résidence. En utilisant les services, vous déclarez avoir la capacité légale de conclure une entente exécutoire.</p>
+    </div>
+  </section>
+
+  <!-- 5. ACCEPTABLE USE -->
+  <section>
+    <h2><span class="section-num">05</span><span class="en">Acceptable use</span><span class="fr">Utilisation acceptable</span></h2>
+    <div class="en">
+      <p>You agree to use the website and services lawfully and respectfully. In particular, you agree not to:</p>
+      <ul>
+        <li>Attempt to interfere with the operation, security, or integrity of the website or our infrastructure.</li>
+        <li>Reverse engineer, decompile, or attempt to extract the source code of our applications, except as expressly permitted by applicable law.</li>
+        <li>Use the website or services to transmit malicious code, conduct denial-of-service attacks, or send unsolicited communications.</li>
+        <li>Use the website or services to violate the rights of others, including intellectual property rights, privacy rights, or publicity rights.</li>
+        <li>Misrepresent your identity or your affiliation with the studio.</li>
+        <li>Use automated means (scrapers, bots) to extract content from the website in a way that imposes an unreasonable load on our infrastructure.</li>
+      </ul>
+    </div>
+    <div class="fr">
+      <p>Vous acceptez d'utiliser le site web et les services de manière légale et respectueuse. En particulier, vous acceptez de ne pas :</p>
+      <ul>
+        <li>Tenter d'interférer avec le fonctionnement, la sécurité ou l'intégrité du site web ou de notre infrastructure.</li>
+        <li>Faire de l'ingénierie inverse, décompiler ou tenter d'extraire le code source de nos applications, sauf si la loi applicable le permet expressément.</li>
+        <li>Utiliser le site web ou les services pour transmettre du code malveillant, mener des attaques par déni de service ou envoyer des communications non sollicitées.</li>
+        <li>Utiliser le site web ou les services pour violer les droits d'autrui, y compris les droits de propriété intellectuelle, les droits à la vie privée ou les droits à l'image.</li>
+        <li>Vous présenter faussement ou vous prétendre affilié au studio.</li>
+        <li>Utiliser des moyens automatisés (extracteurs, robots) pour extraire le contenu du site web d'une manière imposant une charge déraisonnable sur notre infrastructure.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. INTELLECTUAL PROPERTY -->
+  <section>
+    <h2><span class="section-num">06</span><span class="en">Intellectual property</span><span class="fr">Propriété intellectuelle</span></h2>
+    <div class="en">
+      <p>All content on the website calmtechnotebook.ca, including but not limited to text, images, logos, icons, design elements, source code (where publicly displayed), and trademarks, is the property of Calm Tech Notebook or its licensors and is protected by Canadian and international intellectual property laws.</p>
+      <p>You may view and share links to the website. Any other use, including reproduction, modification, distribution, public display, or commercial use of the content, requires our prior written authorization.</p>
+      <p>The names <em>Calm Tech Notebook</em>, <em>CalmFeed</em>, <em>CalmShot</em>, and the studio's logos and visual identity are the exclusive property of Calm Tech Notebook. The studio reserves all rights in the names of additional applications as they are published. You may not use these names or marks in a way that suggests endorsement or affiliation without prior written authorization.</p>
+      <p>Open source components used in our applications are licensed under their respective licenses (typically MIT, Apache 2.0, or BSD), and the obligations of those licenses are respected.</p>
+    </div>
+    <div class="fr">
+      <p>L'ensemble du contenu du site calmtechnotebook.ca, incluant sans s'y limiter les textes, images, logos, icônes, éléments de design, code source (lorsque publiquement affiché) et marques de commerce, est la propriété de Calm Tech Notebook ou de ses concédants de licence et est protégé par les lois canadiennes et internationales sur la propriété intellectuelle.</p>
+      <p>Vous pouvez consulter et partager des liens vers le site web. Toute autre utilisation, notamment la reproduction, la modification, la distribution, l'affichage public ou l'utilisation commerciale du contenu, nécessite notre autorisation écrite préalable.</p>
+      <p>Les noms <em>Calm Tech Notebook</em>, <em>CalmFeed</em>, <em>CalmShot</em>, ainsi que les logos et l'identité visuelle du studio, sont la propriété exclusive de Calm Tech Notebook. Le studio se réserve tous les droits sur les noms des applications additionnelles au fur et à mesure de leur publication. Vous ne pouvez utiliser ces noms ou marques d'une manière suggérant une approbation ou une affiliation sans autorisation écrite préalable.</p>
+      <p>Les composantes libres utilisées dans nos applications sont sous licence selon leurs licences respectives (généralement MIT, Apache 2.0 ou BSD), et les obligations de ces licences sont respectées.</p>
+    </div>
+  </section>
+
+  <!-- 7. DISCLAIMERS -->
+  <section>
+    <h2><span class="section-num">07</span><span class="en">Disclaimers and warranties</span><span class="fr">Avertissements et garanties</span></h2>
+    <div class="en">
+      <p>The website and services are provided <em>as is</em> and <em>as available</em>, without warranty of any kind, whether express, implied, or statutory, except as required by applicable law that cannot be waived. To the fullest extent permitted by law, we disclaim all implied warranties, including warranties of merchantability, fitness for a particular purpose, accuracy, completeness, and non-infringement.</p>
+      <p>We do not warrant that the website or services will be uninterrupted, error-free, free of viruses, or that defects will be corrected. You use the website and services at your own risk.</p>
+      <p>Information provided on the website is for general informational purposes only and should not be relied upon as professional advice of any kind.</p>
+    </div>
+    <div class="fr">
+      <p>Le site web et les services sont fournis <em>tels quels</em> et <em>tels que disponibles</em>, sans garantie d'aucune sorte, expresse, implicite ou légale, sauf dans la mesure où la loi applicable l'exige sans qu'il soit possible d'y renoncer. Dans la mesure maximale permise par la loi, nous excluons toute garantie implicite, notamment les garanties de qualité marchande, d'adaptation à un usage particulier, d'exactitude, d'exhaustivité et d'absence de contrefaçon.</p>
+      <p>Nous ne garantissons pas que le site web ou les services seront ininterrompus, exempts d'erreurs, exempts de virus, ou que les défauts seront corrigés. Vous utilisez le site web et les services à vos propres risques.</p>
+      <p>Les renseignements fournis sur le site web le sont à titre d'information générale uniquement et ne doivent pas être considérés comme des conseils professionnels d'aucune sorte.</p>
+    </div>
+  </section>
+
+  <!-- 8. HEALTH DISCLAIMER -->
+  <section>
+    <h2><span class="section-num">08</span><span class="en">Health, wellness, and nutrition disclaimer</span><span class="fr">Avertissement santé, bien-être et nutrition</span></h2>
+    <div class="en">
+      <p>Some applications published or to be published by the studio may relate to health, wellness, physical activity, or nutrition. Such applications, including any current or future applications dealing with such topics, are intended as personal organization and tracking tools only.</p>
+      <div class="legal-emphasis">
+        <p><strong>Our applications do not provide medical advice, diagnosis, or treatment.</strong> They are not a substitute for consultation with a qualified healthcare professional. Decisions related to your health, your nutrition, your physical activity, or the management of any medical condition must be made in consultation with a qualified professional.</p>
+        <p>Information stored or displayed in the applications is provided for your personal reference and may contain inaccuracies, omissions, or be out of date. You are responsible for verifying any information before relying on it for health-related decisions.</p>
+        <p>If you are experiencing a medical emergency, contact your local emergency services or a qualified healthcare provider immediately.</p>
+      </div>
+    </div>
+    <div class="fr">
+      <p>Certaines applications publiées ou à être publiées par le studio peuvent toucher à la santé, au bien-être, à l'activité physique ou à la nutrition. De telles applications, incluant toute application actuelle ou future traitant de tels sujets, sont conçues uniquement comme des outils personnels d'organisation et de suivi.</p>
+      <div class="legal-emphasis">
+        <p><strong>Nos applications ne fournissent ni avis médical, ni diagnostic, ni traitement.</strong> Elles ne remplacent pas la consultation d'un professionnel de la santé qualifié. Les décisions relatives à votre santé, votre nutrition, votre activité physique ou la gestion d'une condition médicale doivent être prises en consultation avec un professionnel qualifié.</p>
+        <p>Les renseignements stockés ou affichés dans les applications sont fournis à titre de référence personnelle et peuvent contenir des inexactitudes, des omissions, ou être périmés. Vous êtes responsable de vérifier tout renseignement avant de vous y fier pour des décisions liées à la santé.</p>
+        <p>Si vous vivez une urgence médicale, contactez immédiatement les services d'urgence de votre région ou un professionnel de la santé qualifié.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. LIMITATION OF LIABILITY -->
+  <section>
+    <h2><span class="section-num">09</span><span class="en">Limitation of liability</span><span class="fr">Limitation de responsabilité</span></h2>
+    <div class="en">
+      <p>To the fullest extent permitted by applicable law:</p>
+      <div class="legal-emphasis">
+        <p><strong>Exclusion of indirect damages.</strong> The studio shall not be liable for any indirect, incidental, consequential, special, exemplary, or punitive damages of any kind, including but not limited to loss of profits, loss of revenue, loss of data, loss of opportunity, loss of goodwill, or business interruption, arising out of or in connection with your use of the website or services, even if the studio has been advised of the possibility of such damages.</p>
+        <p><strong>Liability cap.</strong> The total aggregate liability of the studio for all claims arising out of or in connection with the website or services, regardless of the form of action (contract, tort, strict liability, or otherwise), shall not exceed the greater of: (a) the total amount actually paid by you to the studio for the service that gave rise to the claim during the twelve (12) months immediately preceding the event giving rise to the claim, or (b) one hundred Canadian dollars (CAD $100).</p>
+      </div>
+      <p>Some jurisdictions do not allow the exclusion or limitation of certain damages. To the extent that applicable law does not permit such exclusions or limitations, our liability is limited to the maximum extent permitted by that law. Nothing in these terms limits or excludes liability that cannot be limited or excluded under applicable law (such as for fraud or gross negligence).</p>
+    </div>
+    <div class="fr">
+      <p>Dans la mesure maximale permise par la loi applicable :</p>
+      <div class="legal-emphasis">
+        <p><strong>Exclusion des dommages indirects.</strong> Le studio ne pourra être tenu responsable des dommages indirects, accessoires, consécutifs, spéciaux, exemplaires ou punitifs de quelque nature que ce soit, incluant sans s'y limiter la perte de profits, la perte de revenus, la perte de données, la perte d'occasion d'affaires, l'atteinte à la réputation ou l'interruption d'activités, découlant de ou en lien avec votre utilisation du site web ou des services, même si le studio a été avisé de la possibilité de tels dommages.</p>
+        <p><strong>Plafonnement de la responsabilité.</strong> La responsabilité totale et globale du studio pour toute réclamation découlant de ou en lien avec le site web ou les services, quelle que soit la forme de l'action (contractuelle, délictuelle, responsabilité stricte ou autre), ne pourra excéder le plus élevé des montants suivants : (a) le montant total réellement payé par vous au studio pour le service ayant donné lieu à la réclamation au cours des douze (12) mois précédant immédiatement l'événement ayant donné lieu à la réclamation, ou (b) cent dollars canadiens (100 $ CAD).</p>
+      </div>
+      <p>Certaines juridictions n'autorisent pas l'exclusion ou la limitation de certains dommages. Dans la mesure où la loi applicable n'autorise pas de telles exclusions ou limitations, notre responsabilité est limitée dans la mesure maximale permise par cette loi. Aucune disposition de ces conditions ne limite ou n'exclut une responsabilité qui ne peut être limitée ou exclue en vertu de la loi applicable (notamment pour la fraude ou la faute lourde).</p>
+    </div>
+  </section>
+
+  <!-- 10. INDEMNIFICATION -->
+  <section>
+    <h2><span class="section-num">10</span><span class="en">Indemnification</span><span class="fr">Indemnisation</span></h2>
+    <div class="en">
+      <p>You agree to indemnify and hold the studio harmless from any claim, demand, loss, liability, or expense (including reasonable legal fees) arising from: (a) your breach of these terms; (b) your violation of any law or third-party right; or (c) your misuse of the website or services.</p>
+    </div>
+    <div class="fr">
+      <p>Vous acceptez d'indemniser le studio et de le tenir indemne de toute réclamation, demande, perte, responsabilité ou dépense (incluant les frais juridiques raisonnables) découlant de : (a) votre violation de ces conditions ; (b) votre violation d'une loi ou d'un droit d'un tiers ; ou (c) votre utilisation abusive du site web ou des services.</p>
+    </div>
+  </section>
+
+  <!-- 11. THIRD-PARTY LINKS -->
+  <section>
+    <h2><span class="section-num">11</span><span class="en">Third-party links and services</span><span class="fr">Liens et services tiers</span></h2>
+    <div class="en">
+      <p>The website may contain links to third-party websites and services that are not operated by the studio. We are not responsible for the content, accuracy, privacy practices, or availability of those third-party services. Following a link is at your own risk and is governed by the terms and policies of the third party.</p>
+    </div>
+    <div class="fr">
+      <p>Le site web peut contenir des liens vers des sites web et services tiers qui ne sont pas exploités par le studio. Nous ne sommes pas responsables du contenu, de l'exactitude, des pratiques de confidentialité ou de la disponibilité de ces services tiers. Suivre un lien se fait à vos propres risques et est régi par les conditions et politiques du tiers.</p>
+    </div>
+  </section>
+
+  <!-- 12. TERMINATION -->
+  <section>
+    <h2><span class="section-num">12</span><span class="en">Termination and changes to services</span><span class="fr">Résiliation et modifications des services</span></h2>
+    <div class="en">
+      <p>The studio may, at any time and at its sole discretion, modify, suspend, or discontinue the website or any service, in whole or in part, with or without notice. The studio may also restrict access to the website for any user who breaches these terms.</p>
+      <p>Sections of these terms that, by their nature, should survive termination (including intellectual property, disclaimers, limitation of liability, indemnification, and governing law) shall survive any termination.</p>
+    </div>
+    <div class="fr">
+      <p>Le studio peut, à tout moment et à sa seule discrétion, modifier, suspendre ou cesser le site web ou tout service, en totalité ou en partie, avec ou sans préavis. Le studio peut également restreindre l'accès au site web pour tout utilisateur qui contrevient à ces conditions.</p>
+      <p>Les sections de ces conditions qui, par leur nature, devraient survivre à la résiliation (notamment la propriété intellectuelle, les avertissements, la limitation de responsabilité, l'indemnisation et le droit applicable) survivront à toute résiliation.</p>
+    </div>
+  </section>
+
+  <!-- 13. MODIFICATIONS -->
+  <section>
+    <h2><span class="section-num">13</span><span class="en">Modifications to these terms</span><span class="fr">Modifications de ces conditions</span></h2>
+    <div class="en">
+      <p>We may update these terms from time to time. The effective date at the top of this page indicates when the current version became effective. Material changes will be communicated through the website or, where appropriate, by direct notice. Your continued use of the website or services after a change becomes effective constitutes acceptance of the updated terms.</p>
+    </div>
+    <div class="fr">
+      <p>Nous pouvons mettre à jour ces conditions de temps à autre. La date d'entrée en vigueur en haut de cette page indique le moment où la version actuelle est devenue effective. Les changements importants seront communiqués via le site web ou, le cas échéant, par avis direct. Votre utilisation continue du site web ou des services après l'entrée en vigueur d'un changement constitue l'acceptation des conditions mises à jour.</p>
+    </div>
+  </section>
+
+  <!-- 14. GOVERNING LAW -->
+  <section>
+    <h2><span class="section-num">14</span><span class="en">Governing law and dispute resolution</span><span class="fr">Droit applicable et règlement des différends</span></h2>
+    <div class="en">
+      <p>These terms are governed by the laws of the Province of Quebec and the federal laws of Canada applicable therein, without regard to conflict-of-law principles.</p>
+      <p>Any dispute arising out of or in connection with these terms shall be brought exclusively before the competent courts of the judicial district of the studio's place of business in Quebec, Canada, except where applicable consumer protection law grants you the right to bring an action in your place of residence.</p>
+      <p>The parties expressly request that these terms and all related documents be drawn up in English. Les parties demandent expressément que ces conditions et tous les documents connexes soient rédigés en français.</p>
+    </div>
+    <div class="fr">
+      <p>Ces conditions sont régies par les lois de la province de Québec et les lois fédérales du Canada qui y sont applicables, sans égard aux règles de conflit de lois.</p>
+      <p>Tout différend découlant de ou en lien avec ces conditions sera porté exclusivement devant les tribunaux compétents du district judiciaire du lieu d'affaires du studio au Québec, Canada, sauf lorsque la loi applicable de protection du consommateur vous accorde le droit d'intenter une action à votre lieu de résidence.</p>
+      <p>Les parties demandent expressément que ces conditions et tous les documents connexes soient rédigés en français. The parties expressly request that these terms and all related documents be drawn up in English.</p>
+    </div>
+  </section>
+
+  <!-- 15. SEVERABILITY -->
+  <section>
+    <h2><span class="section-num">15</span><span class="en">Severability and entire agreement</span><span class="fr">Divisibilité et intégralité de l'entente</span></h2>
+    <div class="en">
+      <p>If any provision of these terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall remain in full force and effect, and the invalid provision shall be replaced with a valid provision that most closely reflects the original intent.</p>
+      <p>These terms, together with any application-specific EULA and the privacy policy, constitute the entire agreement between you and the studio regarding the use of the website and services, and supersede all prior agreements and understandings on the subject.</p>
+    </div>
+    <div class="fr">
+      <p>Si une disposition de ces conditions est jugée invalide, illégale ou inapplicable par un tribunal compétent, les autres dispositions demeureront pleinement en vigueur, et la disposition invalide sera remplacée par une disposition valide reflétant le plus fidèlement l'intention initiale.</p>
+      <p>Ces conditions, en plus de toute CLUF propre à une application et de la politique de confidentialité, constituent l'entente intégrale entre vous et le studio concernant l'utilisation du site web et des services, et remplacent toute entente ou tout accord antérieur sur le sujet.</p>
+    </div>
+  </section>
+
+  <!-- 16. CONTACT -->
+  <section>
+    <h2><span class="section-num">16</span><span class="en">Contact</span><span class="fr">Contact</span></h2>
+    <div class="en">
+      <p>For any question about these terms, contact:</p>
+    </div>
+    <div class="fr">
+      <p>Pour toute question concernant ces conditions, contactez :</p>
+    </div>
+    <div class="contact-block">
+      <p class="label"><span class="en">Studio</span><span class="fr">Studio</span></p>
+      <p class="value">Calm Tech Notebook</p>
+      <p class="label"><span class="en">Operator</span><span class="fr">Exploitant</span></p>
+      <p class="value">Tristan Audet</p>
+      <p class="label"><span class="en">Email</span><span class="fr">Courriel</span></p>
+      <p class="value"><a class="link" href="mailto:calmtechnotebook@proton.me">calmtechnotebook@proton.me</a></p>
+      <p class="label"><span class="en">Jurisdiction</span><span class="fr">Juridiction</span></p>
+      <p class="value">Quebec, Canada</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-links">
+    <a href="https://calmtechnotebook.ca">
+      <span class="en">Home</span><span class="fr">Accueil</span>
+    </a>
+    <a href="https://calmtechnotebook.ca/privacy">
+      <span class="en">Privacy</span><span class="fr">Confidentialité</span>
+    </a>
+    <a href="https://calmtechnotebook.ca/terms">
+      <span class="en">Terms</span><span class="fr">Conditions</span>
+    </a>
+    <a href="mailto:calmtechnotebook@proton.me">Contact</a>
+  </div>
+  <p class="footer-copy">
+    <span class="en">&copy; 2026 Calm Tech Notebook &middot; Canada</span>
+    <span class="fr">&copy; 2026 Calm Tech Notebook &middot; Canada</span>
+  </p>
+</footer>
+
+<!-- ─── LANGUAGE SWITCH ─── -->
+<script>
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    try { localStorage.setItem('ctn-lang', lang); } catch(e) {}
+  }
+  (function() {
+    try {
+      var saved = localStorage.getItem('ctn-lang');
+      if (saved === 'fr' || saved === 'en') setLang(saved);
+    } catch(e) {}
+  })();
+</script>
+
+</body>
+</html>
