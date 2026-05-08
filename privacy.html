@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Calm Tech Notebook</title>
+<meta name="description" content="Privacy policy for Calm Tech Notebook, an indie studio building local-first apps with zero tracking.">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calmtechnotebook.ca/privacy">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%23000000'/><circle cx='50' cy='50' r='32' fill='none' stroke='%23ffffff' stroke-width='3'/><circle cx='50' cy='50' r='8' fill='%23ffffff'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --black: #000000;
+    --near-black: #0a0a0a;
+    --card: #111111;
+    --border: #1e1e1e;
+    --white: #ffffff;
+    --grey-1: #888888;
+    --grey-2: #555555;
+    --grey-3: #333333;
+    --accent: #c8c8c8;
+    --red: #cc3333;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  /* ─── LANGUAGE TOGGLE ─── */
+  html[data-lang="en"] .fr { display: none; }
+  html[data-lang="fr"] .en { display: none; }
+
+  .lang-toggle {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+    display: flex;
+    gap: 4px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    padding: 4px;
+  }
+  .lang-toggle button {
+    background: transparent;
+    border: none;
+    color: var(--grey-1);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .lang-toggle button:hover { color: var(--white); }
+  .lang-toggle button.active {
+    background: var(--white);
+    color: var(--black);
+  }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    line-height: 1.7;
+  }
+
+  a { color: inherit; }
+  a.link {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--grey-3);
+    transition: border-color 0.2s ease;
+  }
+  a.link:hover { border-color: var(--white); }
+
+  /* ─── TOP NAV ─── */
+  .top-nav {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 100;
+  }
+  .top-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--grey-1);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    transition: color 0.2s ease;
+  }
+  .top-nav a:hover { color: var(--white); }
+  .top-nav svg {
+    width: 12px;
+    height: 12px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  /* ─── HEADER ─── */
+  .doc-header {
+    padding: 140px 24px 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--grey-1);
+    margin-bottom: 20px;
+  }
+  .doc-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  .doc-meta {
+    font-size: 13px;
+    color: var(--grey-2);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── BODY ─── */
+  .doc-body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 100px;
+  }
+
+  .summary-card {
+    background: var(--near-black);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 36px;
+    margin-bottom: 64px;
+  }
+  .summary-card h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .summary-card p {
+    font-size: 15px;
+    color: var(--grey-1);
+    line-height: 1.75;
+    margin-bottom: 12px;
+  }
+  .summary-card p:last-child { margin-bottom: 0; }
+  .summary-card strong {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .doc-body section {
+    margin-bottom: 56px;
+  }
+  .doc-body section:last-child {
+    margin-bottom: 0;
+  }
+
+  .doc-body h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(22px, 3.5vw, 28px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-body h2 .section-num {
+    font-size: 0.6em;
+    color: var(--grey-2);
+    margin-right: 12px;
+    font-style: italic;
+  }
+
+  .doc-body h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
+  }
+
+  .doc-body p {
+    font-size: 15px;
+    color: var(--grey-1);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .doc-body p:last-child { margin-bottom: 0; }
+
+  .doc-body ul, .doc-body ol {
+    margin: 0 0 20px 24px;
+    padding: 0;
+    color: var(--grey-1);
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  .doc-body li {
+    margin-bottom: 10px;
+  }
+  .doc-body li::marker {
+    color: var(--grey-2);
+  }
+
+  .doc-body strong {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .doc-body em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .info-box {
+    background: var(--near-black);
+    border-left: 2px solid var(--grey-3);
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .info-box p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .info-box p:last-child { margin-bottom: 0; }
+
+  .contact-block {
+    background: var(--near-black);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 24px;
+  }
+  .contact-block p {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .contact-block .label {
+    color: var(--grey-2);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .contact-block .value {
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .contact-block .value:last-child { margin-bottom: 0; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    color: var(--grey-1);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .footer-links a:hover { color: var(--white); }
+  .footer-copy {
+    color: var(--grey-2);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 600px) {
+    .top-nav { top: 16px; left: 16px; }
+    .lang-toggle { top: 16px; right: 16px; }
+    .doc-header { padding: 120px 20px 50px; }
+    .doc-body { padding: 60px 20px 80px; }
+    .summary-card { padding: 24px; }
+    .contact-block { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── TOP NAV ─── -->
+<div class="top-nav">
+  <a href="https://calmtechnotebook.ca">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    <span class="en">HOME</span><span class="fr">ACCUEIL</span>
+  </a>
+</div>
+
+<!-- ─── LANGUAGE TOGGLE ─── -->
+<div class="lang-toggle" role="group" aria-label="Language">
+  <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+  <button id="btn-fr" onclick="setLang('fr')">FR</button>
+</div>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="doc-header">
+  <p class="doc-eyebrow">
+    <span class="en">Legal</span>
+    <span class="fr">Légal</span>
+  </p>
+  <h1 class="doc-title">
+    <span class="en">Privacy Policy</span>
+    <span class="fr">Politique de confidentialité</span>
+  </h1>
+  <p class="doc-meta">
+    <span class="en">Effective May 8, 2026 &middot; Last updated May 8, 2026</span>
+    <span class="fr">En vigueur le 8 mai 2026 &middot; Dernière mise à jour le 8 mai 2026</span>
+  </p>
+</header>
+
+<!-- ══════════════ BODY ══════════════ -->
+<main class="doc-body">
+
+  <!-- SUMMARY -->
+  <div class="summary-card">
+    <h2>
+      <span class="en">In short</span>
+      <span class="fr">En bref</span>
+    </h2>
+    <div class="en">
+      <p>Calm Tech Notebook is built on local-first principles. Our apps store your data on your device, not on our servers. We do not use third-party trackers, advertising networks, or behavioural analytics.</p>
+      <p>This policy explains how we handle information at the studio level, including the website <strong>calmtechnotebook.ca</strong> and direct communication with us. Each individual app has its own privacy policy that applies to data processed within that specific app.</p>
+    </div>
+    <div class="fr">
+      <p>Calm Tech Notebook repose sur des principes local-first. Nos applications stockent vos données sur votre appareil, pas sur nos serveurs. Nous n'utilisons pas de pisteurs tiers, de réseaux publicitaires ni d'analytiques comportementales.</p>
+      <p>Cette politique explique comment nous gérons les renseignements au niveau du studio, notamment le site <strong>calmtechnotebook.ca</strong> et les communications directes avec nous. Chaque application possède sa propre politique de confidentialité qui s'applique aux données traitées par cette application.</p>
+    </div>
+  </div>
+
+  <!-- 1. WHO WE ARE -->
+  <section>
+    <h2><span class="section-num">01</span><span class="en">Who we are</span><span class="fr">Qui nous sommes</span></h2>
+    <div class="en">
+      <p>Calm Tech Notebook is an independent software studio operated as a sole proprietorship registered in Quebec, Canada. We design and publish mobile applications grounded in calm technology principles: local-first storage, zero third-party tracking, no advertising, and intentional design.</p>
+      <p>For the purposes of Quebec's <em>Act respecting the protection of personal information in the private sector</em> (Law 25) and Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA), the person responsible for the protection of personal information is the studio's founder, Tristan Audet.</p>
+    </div>
+    <div class="fr">
+      <p>Calm Tech Notebook est un studio logiciel indépendant exploité comme une entreprise individuelle enregistrée au Québec, Canada. Nous concevons et publions des applications mobiles guidées par les principes de la technologie calme : stockage local-first, aucun pistage tiers, aucune publicité, et design intentionnel.</p>
+      <p>Aux fins de la <em>Loi sur la protection des renseignements personnels dans le secteur privé</em> (Loi 25) du Québec et de la <em>Loi sur la protection des renseignements personnels et les documents électroniques</em> (LPRPDE) du Canada, la personne responsable de la protection des renseignements personnels est le fondateur du studio, Tristan Audet.</p>
+    </div>
+  </section>
+
+  <!-- 2. SCOPE -->
+  <section>
+    <h2><span class="section-num">02</span><span class="en">Scope of this policy</span><span class="fr">Portée de cette politique</span></h2>
+    <div class="en">
+      <p>This policy covers:</p>
+      <ul>
+        <li>Your visit to <strong>calmtechnotebook.ca</strong> and any subdomain operated directly by the studio.</li>
+        <li>Your communications with us by email or other direct means.</li>
+        <li>General studio operations that may involve personal information (for example, billing records related to subscriptions).</li>
+      </ul>
+      <p>This policy does <strong>not</strong> cover individual applications published by the studio (CalmFeed, PKU Notes, CalmShot, CalmBody, and others). Each application has its own privacy policy accessible from its product page and from within the application itself.</p>
+      <p>This policy also does not cover services operated by third parties that distribute or process payments for our apps, including the Apple App Store, Google Play, and their respective infrastructure. Those services are governed by their own terms and privacy policies.</p>
+    </div>
+    <div class="fr">
+      <p>Cette politique couvre :</p>
+      <ul>
+        <li>Votre visite sur <strong>calmtechnotebook.ca</strong> et tout sous-domaine exploité directement par le studio.</li>
+        <li>Vos communications avec nous par courriel ou par d'autres moyens directs.</li>
+        <li>Les opérations générales du studio susceptibles d'impliquer des renseignements personnels (par exemple, les registres de facturation liés aux abonnements).</li>
+      </ul>
+      <p>Cette politique ne couvre <strong>pas</strong> les applications individuelles publiées par le studio (CalmFeed, PKU Notes, CalmShot, CalmBody, et autres). Chaque application possède sa propre politique de confidentialité accessible depuis sa page produit et depuis l'application elle-même.</p>
+      <p>Cette politique ne couvre pas non plus les services exploités par des tiers qui distribuent nos applications ou traitent les paiements, notamment l'Apple App Store, Google Play et leurs infrastructures respectives. Ces services sont régis par leurs propres conditions et politiques de confidentialité.</p>
+    </div>
+  </section>
+
+  <!-- 3. INFORMATION WE COLLECT -->
+  <section>
+    <h2><span class="section-num">03</span><span class="en">Information we collect</span><span class="fr">Renseignements que nous recueillons</span></h2>
+
+    <h3><span class="en">On the website</span><span class="fr">Sur le site web</span></h3>
+    <div class="en">
+      <p>We do not run any first-party analytics, behavioural tracking, advertising scripts, or social media tracking pixels on calmtechnotebook.ca. We do not set cookies for tracking purposes.</p>
+      <p>The website loads typography from Google Fonts, which is a third-party service operated by Google. When this happens, your browser sends a standard request to Google's servers, which may include your IP address and basic technical metadata such as the type of browser and operating system. This is not data we collect or have access to. Google's handling of that data is governed by their own privacy policy.</p>
+      <p>Standard server logs may exist at the hosting infrastructure level (currently GitHub Pages) for security and operational purposes. We do not actively review or use these logs.</p>
+    </div>
+    <div class="fr">
+      <p>Nous n'utilisons aucun outil d'analytique de première partie, aucun pistage comportemental, aucun script publicitaire et aucun pixel de pistage de réseaux sociaux sur calmtechnotebook.ca. Nous ne déposons pas de témoins (cookies) à des fins de pistage.</p>
+      <p>Le site charge sa typographie depuis Google Fonts, un service tiers exploité par Google. Lorsque cela se produit, votre navigateur envoie une requête standard aux serveurs de Google, qui peut inclure votre adresse IP et des métadonnées techniques de base comme le type de navigateur et le système d'exploitation. Ce ne sont pas des données que nous recueillons ou auxquelles nous avons accès. Le traitement de ces données par Google est régi par leur propre politique de confidentialité.</p>
+      <p>Des journaux de serveur standards peuvent exister au niveau de l'infrastructure d'hébergement (actuellement GitHub Pages) à des fins de sécurité et d'exploitation. Nous ne consultons ni n'utilisons activement ces journaux.</p>
+    </div>
+
+    <h3><span class="en">When you contact us</span><span class="fr">Lorsque vous nous contactez</span></h3>
+    <div class="en">
+      <p>If you write to us at <strong>calmtechnotebook@proton.me</strong>, we receive the content of your message, your email address, and any information you choose to share. Our email is hosted by Proton, which provides end-to-end encryption between Proton accounts and standard transport-layer encryption otherwise.</p>
+      <p>We use this information solely to respond to your inquiry. We do not add your email address to any marketing list.</p>
+    </div>
+    <div class="fr">
+      <p>Si vous nous écrivez à <strong>calmtechnotebook@proton.me</strong>, nous recevons le contenu de votre message, votre adresse courriel et toute information que vous choisissez de partager. Notre courriel est hébergé par Proton, qui fournit un chiffrement de bout en bout entre comptes Proton et un chiffrement standard de la couche transport autrement.</p>
+      <p>Nous utilisons ces renseignements uniquement pour répondre à votre demande. Nous n'ajoutons pas votre adresse courriel à une liste de diffusion.</p>
+    </div>
+
+    <h3><span class="en">Through paid services</span><span class="fr">Via les services payants</span></h3>
+    <div class="en">
+      <p>When you subscribe to or purchase one of our apps, the transaction is processed by Apple or Google, who collect their own information for payment, fraud prevention, and tax reporting purposes. The studio receives only aggregated, anonymized reports through App Store Connect and Google Play Console (number of downloads, revenue by region, etc.) and does not receive your name, address, payment details, or contact information.</p>
+    </div>
+    <div class="fr">
+      <p>Lorsque vous vous abonnez à l'une de nos applications ou que vous l'achetez, la transaction est traitée par Apple ou Google, qui recueillent leurs propres renseignements à des fins de paiement, de prévention de la fraude et de déclaration fiscale. Le studio reçoit uniquement des rapports agrégés et anonymisés via App Store Connect et Google Play Console (nombre de téléchargements, revenus par région, etc.) et ne reçoit ni votre nom, adresse, détails de paiement ou coordonnées.</p>
+    </div>
+  </section>
+
+  <!-- 4. HOW WE USE -->
+  <section>
+    <h2><span class="section-num">04</span><span class="en">How we use information</span><span class="fr">Comment nous utilisons les renseignements</span></h2>
+    <div class="en">
+      <p>We use the limited information we receive to:</p>
+      <ul>
+        <li>Respond to your questions, support requests, or feedback.</li>
+        <li>Operate and improve our apps and the website.</li>
+        <li>Comply with legal, accounting, and tax obligations applicable in Quebec and Canada.</li>
+        <li>Protect the security and integrity of our services.</li>
+      </ul>
+      <p>We do not use information to profile you, build advertising audiences, or sell to third parties. We do not make automated decisions that produce legal effects concerning you.</p>
+    </div>
+    <div class="fr">
+      <p>Nous utilisons les renseignements limités que nous recevons pour :</p>
+      <ul>
+        <li>Répondre à vos questions, demandes de soutien ou commentaires.</li>
+        <li>Exploiter et améliorer nos applications et le site web.</li>
+        <li>Respecter les obligations légales, comptables et fiscales applicables au Québec et au Canada.</li>
+        <li>Protéger la sécurité et l'intégrité de nos services.</li>
+      </ul>
+      <p>Nous n'utilisons pas vos renseignements pour vous profiler, construire des audiences publicitaires, ou vendre à des tiers. Nous ne prenons pas de décisions automatisées produisant des effets juridiques à votre égard.</p>
+    </div>
+  </section>
+
+  <!-- 5. SHARING -->
+  <section>
+    <h2><span class="section-num">05</span><span class="en">Sharing and third parties</span><span class="fr">Partage et tiers</span></h2>
+    <div class="en">
+      <p>We do not sell, rent, or trade personal information.</p>
+      <p>We may share limited information with the following categories of third parties when necessary for the operation of the studio:</p>
+      <ul>
+        <li><strong>Apple Inc.</strong> and <strong>Google LLC</strong>, who distribute our apps and process payments.</li>
+        <li><strong>Proton AG</strong>, who hosts our professional email.</li>
+        <li><strong>GitHub, Inc.</strong>, who hosts the website and source code repositories.</li>
+        <li>Professional advisors (accountants, legal counsel, insurers) bound by confidentiality obligations, when their involvement is needed for the studio's operations.</li>
+        <li>Government authorities, when required by valid legal process.</li>
+      </ul>
+      <p>Some of these third parties are located outside Canada, including in the United States and Europe. By using our services or contacting us, you understand that limited personal information may be transferred to and processed in those jurisdictions, subject to the protections offered by those providers and applicable law.</p>
+    </div>
+    <div class="fr">
+      <p>Nous ne vendons pas, ne louons pas et n'échangeons pas de renseignements personnels.</p>
+      <p>Nous pouvons partager des renseignements limités avec les catégories de tiers suivantes lorsque cela est nécessaire à l'exploitation du studio :</p>
+      <ul>
+        <li><strong>Apple Inc.</strong> et <strong>Google LLC</strong>, qui distribuent nos applications et traitent les paiements.</li>
+        <li><strong>Proton AG</strong>, qui héberge notre courriel professionnel.</li>
+        <li><strong>GitHub, Inc.</strong>, qui héberge le site web et les dépôts de code source.</li>
+        <li>Conseillers professionnels (comptables, conseil juridique, assureurs) tenus à des obligations de confidentialité, lorsque leur intervention est nécessaire aux opérations du studio.</li>
+        <li>Autorités gouvernementales, lorsque la loi l'exige par procédure légale valide.</li>
+      </ul>
+      <p>Certains de ces tiers sont situés hors du Canada, notamment aux États-Unis et en Europe. En utilisant nos services ou en nous contactant, vous comprenez que des renseignements personnels limités peuvent être transférés et traités dans ces juridictions, sous réserve des protections offertes par ces fournisseurs et de la loi applicable.</p>
+    </div>
+  </section>
+
+  <!-- 6. RETENTION -->
+  <section>
+    <h2><span class="section-num">06</span><span class="en">Data retention</span><span class="fr">Conservation des données</span></h2>
+    <div class="en">
+      <p>We retain personal information only for as long as is necessary for the purpose for which it was collected, or as required by applicable law.</p>
+      <ul>
+        <li><strong>Email correspondence:</strong> retained as long as needed to maintain a record of the conversation, generally not exceeding two years after the last exchange, unless the conversation is part of an ongoing matter.</li>
+        <li><strong>Billing and tax records:</strong> retained for the period required by Canadian and Quebec tax law, generally six years.</li>
+        <li><strong>Server logs:</strong> retained according to the hosting provider's default policies, typically a few weeks.</li>
+      </ul>
+    </div>
+    <div class="fr">
+      <p>Nous conservons les renseignements personnels uniquement pendant la durée nécessaire à la finalité pour laquelle ils ont été recueillis, ou tel que requis par la loi applicable.</p>
+      <ul>
+        <li><strong>Correspondance courriel :</strong> conservée aussi longtemps que nécessaire au maintien du dossier de conversation, généralement pas plus de deux ans après le dernier échange, sauf si la conversation s'inscrit dans un dossier en cours.</li>
+        <li><strong>Registres de facturation et fiscaux :</strong> conservés pour la période requise par les lois fiscales canadiennes et québécoises, généralement six ans.</li>
+        <li><strong>Journaux de serveur :</strong> conservés selon les politiques par défaut du fournisseur d'hébergement, généralement quelques semaines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. YOUR RIGHTS -->
+  <section>
+    <h2><span class="section-num">07</span><span class="en">Your rights</span><span class="fr">Vos droits</span></h2>
+    <div class="en">
+      <p>Under Quebec's Law 25, PIPEDA, and other applicable privacy laws, you have the following rights regarding personal information we hold about you:</p>
+      <ul>
+        <li><strong>Access:</strong> the right to know whether we hold information about you and to obtain a copy.</li>
+        <li><strong>Rectification:</strong> the right to ask us to correct information that is inaccurate, incomplete, or out of date.</li>
+        <li><strong>Deletion:</strong> the right to ask us to delete information, subject to legal retention obligations.</li>
+        <li><strong>Withdrawal of consent:</strong> the right to withdraw consent for processing where processing is based on consent.</li>
+        <li><strong>Portability:</strong> the right to receive a structured, machine-readable copy of certain information you have provided.</li>
+        <li><strong>Complaint:</strong> the right to lodge a complaint with the Commission d'accès à l'information du Québec or the Office of the Privacy Commissioner of Canada.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at the address provided in section 13. We will respond within the time limits set by applicable law (generally 30 days under Law 25).</p>
+    </div>
+    <div class="fr">
+      <p>En vertu de la Loi 25 du Québec, de la LPRPDE et des autres lois sur la protection de la vie privée applicables, vous disposez des droits suivants concernant les renseignements personnels que nous détenons à votre sujet :</p>
+      <ul>
+        <li><strong>Accès :</strong> le droit de savoir si nous détenons des renseignements à votre sujet et d'en obtenir une copie.</li>
+        <li><strong>Rectification :</strong> le droit de nous demander de corriger des renseignements inexacts, incomplets ou périmés.</li>
+        <li><strong>Suppression :</strong> le droit de nous demander de supprimer des renseignements, sous réserve des obligations légales de conservation.</li>
+        <li><strong>Retrait du consentement :</strong> le droit de retirer votre consentement au traitement lorsque celui-ci est fondé sur le consentement.</li>
+        <li><strong>Portabilité :</strong> le droit de recevoir une copie structurée et lisible par machine de certains renseignements que vous nous avez fournis.</li>
+        <li><strong>Plainte :</strong> le droit de déposer une plainte auprès de la Commission d'accès à l'information du Québec ou du Commissariat à la protection de la vie privée du Canada.</li>
+      </ul>
+      <p>Pour exercer l'un de ces droits, contactez-nous à l'adresse fournie à la section 13. Nous répondrons dans les délais prévus par la loi applicable (généralement 30 jours en vertu de la Loi 25).</p>
+    </div>
+  </section>
+
+  <!-- 8. SECURITY -->
+  <section>
+    <h2><span class="section-num">08</span><span class="en">Security</span><span class="fr">Sécurité</span></h2>
+    <div class="en">
+      <p>We apply reasonable technical and organizational safeguards to protect personal information against loss, theft, unauthorized access, and unauthorized disclosure. These include disk encryption on workstations, two-factor authentication on critical accounts, encrypted offline backups, private source code repositories, and limited access on a need-to-know basis (the studio operates with a single principal).</p>
+      <p>Each application published by the studio undergoes a documented security audit prior to release, including secret detection in code history, dependency vulnerability scanning, mobile binary static analysis, and manual configuration review.</p>
+      <p>No system can be guaranteed to be completely secure. If we become aware of a confidentiality incident affecting personal information, we will respond in accordance with the obligations under Law 25 and PIPEDA, including notifying affected individuals and authorities where required.</p>
+    </div>
+    <div class="fr">
+      <p>Nous appliquons des mesures techniques et organisationnelles raisonnables pour protéger les renseignements personnels contre la perte, le vol, l'accès non autorisé et la divulgation non autorisée. Ces mesures comprennent le chiffrement disque sur les postes de travail, l'authentification à deux facteurs sur les comptes critiques, des sauvegardes chiffrées hors ligne, des dépôts de code source privés et un accès limité au strict besoin (le studio est exploité par une seule personne).</p>
+      <p>Chaque application publiée par le studio fait l'objet d'un audit de sécurité documenté avant sa publication, comprenant la détection de secrets dans l'historique du code, l'analyse des vulnérabilités de dépendances, l'analyse statique du binaire mobile, et la revue manuelle de la configuration.</p>
+      <p>Aucun système ne peut être garanti complètement sécurisé. Si nous prenons connaissance d'un incident de confidentialité concernant des renseignements personnels, nous y répondrons conformément aux obligations de la Loi 25 et de la LPRPDE, notamment en notifiant les personnes concernées et les autorités lorsque requis.</p>
+    </div>
+  </section>
+
+  <!-- 9. CHILDREN -->
+  <section>
+    <h2><span class="section-num">09</span><span class="en">Children's privacy</span><span class="fr">Renseignements des enfants</span></h2>
+    <div class="en">
+      <p>The studio's website and applications are not directed at children under the age of 14. We do not knowingly collect personal information from children under 14. If you believe a child has provided us with personal information, please contact us so we can take appropriate action.</p>
+    </div>
+    <div class="fr">
+      <p>Le site web et les applications du studio ne sont pas destinés aux enfants de moins de 14 ans. Nous ne recueillons pas sciemment de renseignements personnels auprès d'enfants de moins de 14 ans. Si vous croyez qu'un enfant nous a fourni des renseignements personnels, veuillez nous contacter afin que nous puissions prendre les mesures appropriées.</p>
+    </div>
+  </section>
+
+  <!-- 10. INTERNATIONAL -->
+  <section>
+    <h2><span class="section-num">10</span><span class="en">International users</span><span class="fr">Utilisateurs internationaux</span></h2>
+    <div class="en">
+      <p>The studio is based in Quebec, Canada. By using our website or contacting us, you understand that your information will be handled in accordance with this policy and Canadian privacy law. If you are located in a jurisdiction with different requirements (for example, the European Economic Area or the United Kingdom), additional rights may apply to you under local law, and we will respect those rights to the extent they apply to our processing.</p>
+    </div>
+    <div class="fr">
+      <p>Le studio est établi au Québec, Canada. En utilisant notre site web ou en nous contactant, vous comprenez que vos renseignements seront traités conformément à cette politique et au droit canadien en matière de protection de la vie privée. Si vous êtes situé dans une juridiction soumise à des exigences différentes (par exemple, l'Espace économique européen ou le Royaume-Uni), des droits supplémentaires peuvent s'appliquer à vous en vertu du droit local, et nous respecterons ces droits dans la mesure où ils s'appliquent à notre traitement.</p>
+    </div>
+  </section>
+
+  <!-- 11. CHANGES -->
+  <section>
+    <h2><span class="section-num">11</span><span class="en">Changes to this policy</span><span class="fr">Modifications de cette politique</span></h2>
+    <div class="en">
+      <p>We may update this policy from time to time to reflect changes in our practices, in technology, or in applicable law. The effective date at the top of this page indicates when the current version became effective. Material changes will be communicated through the website or, where appropriate, by direct notice.</p>
+    </div>
+    <div class="fr">
+      <p>Nous pouvons mettre à jour cette politique de temps à autre pour refléter des changements dans nos pratiques, dans la technologie ou dans le droit applicable. La date d'entrée en vigueur en haut de cette page indique le moment où la version actuelle est devenue effective. Les changements importants seront communiqués via le site web ou, le cas échéant, par avis direct.</p>
+    </div>
+  </section>
+
+  <!-- 12. GOVERNING LAW -->
+  <section>
+    <h2><span class="section-num">12</span><span class="en">Governing law</span><span class="fr">Droit applicable</span></h2>
+    <div class="en">
+      <p>This policy is governed by the laws of the Province of Quebec and the federal laws of Canada applicable therein. Any dispute related to this policy shall be brought before the courts of the judicial district of the studio's place of business.</p>
+    </div>
+    <div class="fr">
+      <p>Cette politique est régie par les lois de la province de Québec et les lois fédérales du Canada qui y sont applicables. Tout litige relatif à cette politique sera porté devant les tribunaux du district judiciaire du lieu d'affaires du studio.</p>
+    </div>
+  </section>
+
+  <!-- 13. CONTACT -->
+  <section>
+    <h2><span class="section-num">13</span><span class="en">Contact</span><span class="fr">Contact</span></h2>
+    <div class="en">
+      <p>For any question, request, or complaint related to this policy or to your personal information, contact:</p>
+    </div>
+    <div class="fr">
+      <p>Pour toute question, demande ou plainte liée à cette politique ou à vos renseignements personnels, contactez :</p>
+    </div>
+    <div class="contact-block">
+      <p class="label"><span class="en">Person responsible</span><span class="fr">Personne responsable</span></p>
+      <p class="value">Tristan Audet</p>
+      <p class="label"><span class="en">Studio</span><span class="fr">Studio</span></p>
+      <p class="value">Calm Tech Notebook</p>
+      <p class="label"><span class="en">Email</span><span class="fr">Courriel</span></p>
+      <p class="value"><a class="link" href="mailto:calmtechnotebook@proton.me">calmtechnotebook@proton.me</a></p>
+      <p class="label"><span class="en">Jurisdiction</span><span class="fr">Juridiction</span></p>
+      <p class="value">Quebec, Canada</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-links">
+    <a href="https://calmtechnotebook.ca">
+      <span class="en">Home</span><span class="fr">Accueil</span>
+    </a>
+    <a href="https://calmtechnotebook.ca/privacy">
+      <span class="en">Privacy</span><span class="fr">Confidentialité</span>
+    </a>
+    <a href="https://calmtechnotebook.ca/terms">
+      <span class="en">Terms</span><span class="fr">Conditions</span>
+    </a>
+    <a href="mailto:calmtechnotebook@proton.me">Contact</a>
+  </div>
+  <p class="footer-copy">
+    <span class="en">&copy; 2026 Calm Tech Notebook &middot; Canada</span>
+    <span class="fr">&copy; 2026 Calm Tech Notebook &middot; Canada</span>
+  </p>
+</footer>
+
+<!-- ─── LANGUAGE SWITCH ─── -->
+<script>
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    try { localStorage.setItem('ctn-lang', lang); } catch(e) {}
+  }
+  (function() {
+    try {
+      var saved = localStorage.getItem('ctn-lang');
+      if (saved === 'fr' || saved === 'en') setLang(saved);
+    } catch(e) {}
+  })();
+</script>
+
+</body>
+</html>
